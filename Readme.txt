@@ -24,3 +24,5 @@
       docker container ls
 10. To enter inside the container
       docker exec -it <containerId> /bin/sh
+
+11. docker-compose up
