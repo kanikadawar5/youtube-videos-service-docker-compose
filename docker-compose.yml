@@ -1,0 +1,15 @@
+version: '2'
+
+services:
+
+  youtube-videos-service:
+    build: ./
+    ports:
+      - "5000:5000"
+    depends_on:
+      - my_mongodb
+
+  my_mongodb:
+      image: mongo
+      ports:
+        - "27017:27017"
